@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56c0c203f0c7715d0a0f4d3d36b1932c",
+    "content-hash": "f26c21401e4d1fada1eecd1728b768ea",
     "packages": [
         {
             "name": "brick/math",
@@ -2078,6 +2078,69 @@
                 }
             ],
             "time": "2024-12-08T08:18:47+00:00"
+        },
+        {
+            "name": "monarul007/laravel-modular-system",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/laravel-modular-system",
+                "reference": "3070a162bd38bd1c5c7cd3e4f172315fb932d072"
+            },
+            "require": {
+                "illuminate/console": "^11.0||^12.0",
+                "illuminate/database": "^11.0||^12.0",
+                "illuminate/http": "^11.0||^12.0",
+                "illuminate/support": "^11.0||^12.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^9.0",
+                "phpunit/phpunit": "^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Monarul007\\LaravelModularSystem\\ModularSystemServiceProvider"
+                    ],
+                    "aliases": {
+                        "ModuleManager": "Monarul007\\LaravelModularSystem\\Facades\\ModuleManager",
+                        "Settings": "Monarul007\\LaravelModularSystem\\Facades\\Settings"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monarul007\\LaravelModularSystem\\": "src/",
+                    "Modules\\": "../../modules/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Monarul007\\LaravelModularSystem\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Your Name",
+                    "email": "your.email@example.com"
+                }
+            ],
+            "description": "WordPress-like modular system for Laravel with plug-and-play functionality",
+            "keywords": [
+                "laravel",
+                "modular",
+                "modules",
+                "plugins",
+                "wordpress-like"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "monolog/monolog",
@@ -8531,8 +8594,10 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": {},
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "monarul007/laravel-modular-system": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

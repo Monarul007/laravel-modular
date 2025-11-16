@@ -1,4 +1,5 @@
 [
     "LoginWithPhone",
-    "OTP"
+    "OTP",
+    "TestModule"
 ]

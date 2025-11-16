@@ -1,0 +1,10 @@
+{
+    "name": "TestModule",
+    "description": "The TestModule module",
+    "version": "1.0.0",
+    "namespace": "Modules\\TestModule",
+    "providers": [
+        "Modules\\TestModule\\Providers\\TestModuleServiceProvider"
+    ],
+    "dependencies": []
+}

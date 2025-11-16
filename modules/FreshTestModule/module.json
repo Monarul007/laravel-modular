@@ -1,0 +1,10 @@
+{
+    "name": "FreshTestModule",
+    "description": "The FreshTestModule module",
+    "version": "1.0.0",
+    "namespace": "Modules\\FreshTestModule",
+    "providers": [
+        "Modules\\FreshTestModule\\Providers\\FreshTestModuleServiceProvider"
+    ],
+    "dependencies": []
+}
